@@ -1,0 +1,64 @@
+/* Fundo geral */
+body {
+    background-color: #000; /* preto puro */
+    color: #00ff00; /* verde neon */
+    font-family: 'Courier New', Courier, monospace; /* fonte estilo terminal */
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Terminal container */
+  .terminal {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #00ff00;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); /* glow verde */
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Links */
+  a {
+    color: #00ff00;
+    text-decoration: none;
+    border-bottom: 1px dashed #00ff00;
+    transition: all 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0f0;
+    border-bottom: 1px solid #00ff00;
+    text-shadow: 0 0 5px #00ff00;
+  }
+  
+  /* Cabeçalhos */
+  h1, h2 {
+    margin-top: 0;
+    text-shadow: 0 0 10px #00ff00; /* efeito neon */
+  }
+  
+  /* Parágrafos */
+  p {
+    line-height: 1.6;
+  }
+  
+  /* Cursor piscando */
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+  
+  .terminal p::after {
+    content: "█"; /* bloco cheio, estilo terminal */
+    animation: blink 1s infinite;
+    margin-left: 5px;
+  }
+ 
+  .foto img {
+    width: 100px;  /* tamanho fixo */
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+    border-radius: 5px; /* deixa levemente arredondado */
+  }
+  
+  
