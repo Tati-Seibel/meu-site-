@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
   <div class="terminal">
@@ -15,22 +16,22 @@
     <p><h1>Como Publiquei Meu Site no GitHub Pages</h1></p>
     <p>Criei meu repositório no GitHub
 
-<br>Entrei no GitHub e criei um repositório novo para o meu site.<br>
+Entrei no GitHub e criei um repositório novo para o meu site.
 
-Enviei os arquivos do site <br>
+Enviei os arquivos do site
 
-Fiz o upload das pastas e arquivos do site diretamente para o repositório. <br>
+Fiz o upload das pastas e arquivos do site diretamente para o repositório.
 
-Publiquei com o GitHub Pages <br>
+Publiquei com o GitHub Pages
 
-Acessei Settings → Pages e ativei o GitHub Pages. <br>
+Acessei Settings → Pages e ativei o GitHub Pages.
 
-O GitHub gerou um link para meu site, que ficou assim: <br>
-https://tati-seibel.github.io/meu-site-/. <br>
+O GitHub gerou um link para meu site, que ficou assim:
+https://tati-seibel.github.io/meu-site-/.
 
-Visualizei offline  <br>
+Visualizei offline 
 
-Baixei pelo aplicativo com o Edge. <br>
+Baixei pelo aplicativo com o Edge.
 
 Assim pude abrir os arquivos localmente e ver meu site funcionando offline, com opção de navegar entre Home e SObre mim.</p>
      <div>
@@ -40,9 +41,18 @@ Assim pude abrir os arquivos localmente e ver meu site funcionando offline, com 
         <img src="img/hackerzinha.jpeg" alt="Foto da Tatiane">
       </div>  
   </div>
-  <script src="script.js"></script>
+  <script src="script.js">
+    // script.js
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js')
+    .then(() => console.log('✅ Service Worker registrado com sucesso!'))
+    .catch(error => console.error('❌ Falha ao registrar Service Worker:', error));
+}
+
+  </script>
 </body>
 </html>
+
 
 
 
